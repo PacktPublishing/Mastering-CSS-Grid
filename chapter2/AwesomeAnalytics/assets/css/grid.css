@@ -1,0 +1,32 @@
+body {
+  display: grid;
+
+  grid-template:
+    "header header" min-content;
+    "sidebar content" auto;
+
+  grid-template-columns: auto 1fr;
+}
+
+.page-header {
+  grid-area: header;
+}
+
+.main-page-content {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 400px;
+
+  gap: var(--spacing-l);
+
+  grid-auto-flow: row dense;
+}
+
+.chart-box-wide {
+  grid-column: span 2
+}
+
+.chart-box-tall {
+  grid-row: span 2
+}

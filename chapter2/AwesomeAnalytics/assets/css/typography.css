@@ -1,0 +1,50 @@
+@import "../../node_modules/@fontsource/inter/300.css";
+@import "../../node_modules/@fontsource/inter/400.css";
+@import "../../node_modules/@fontsource/inter/700.css";
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.link, a, a:link, a:visited {
+  color: var(--color-brand-dark);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.link:hover, a:hover {
+  color: var(--color-brand-light);
+  text-decoration: none;
+}
+
+.link > .icon, a > .icon {
+  margin-right: var(--spacing-m);
+}
+
+.h1 {
+  font-weight: 300;
+  font-size: var(--font-size-xxl);
+  line-height: var(--line-height-snug);
+}
+
+.h2 {
+  font-weight: 300;
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-snug);
+}
+
+.h3 {
+  font-weight: 300;
+  font-size: var(--font-size-l);
+  line-height: var(--line-height-snug);
+}
+
+p, .p {
+  font-weight: 300;
+  font-size: var(--font-size-m);
+  line-height: var(--line-height-standard);
+}
+
+.bold {
+  font-weight: 700;
+}

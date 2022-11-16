@@ -1,0 +1,17 @@
+.page-header {
+  padding: var(--spacing-l);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: var(--border-standard);
+}
+
+.page-title {
+  display: flex;
+  align-items: center;
+}
+
+.page-title .material-icons-outlined {
+  margin-right: var(--spacing-m);
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chapter 1, grid flow</title>
+
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(5, 100px);
+        grid-template-rows: repeat(6, 100px);
+        gap: 5px;
+      }
+      .small {
+        background-color: darkblue;
+      }
+      .large {
+        grid-column: auto / span 2;
+        grid-row: auto / span 2;
+        background-color: darkblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="small"></div>
+      <div class="large"></div>
+      <div class="large"></div>
+      <div class="large"></div>
+      <div class="large"></div>
+      <div class="small"></div>
+      <div class="small"></div>
+      <div class="small"></div>
+      <div class="small"></div>
+      <div class="small"></div>
+      <div class="small"></div>
+      <div class="small"></div>
+      <div class="small"></div>
+    </div>
+  </body>
+</html>

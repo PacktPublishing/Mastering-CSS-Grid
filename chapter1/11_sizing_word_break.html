@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chapter 1, content related sizing</title>
+
+    <style>
+      .container {
+        width: 500px;
+        display: grid;
+        grid-template-columns: minmax(50px, min-content) 1fr 3fr;
+        gap: 25px;
+      }
+
+      div {
+        word-break: break-all;
+      }
+    </style>
+  </head>
+  <body>
+
+  <div class="container">
+    <div>
+      Hello, World!
+    </div>
+    <div>
+      Some other column
+    </div>
+    <div>
+      Some other column
+    </div>
+  </div>
+
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chapter 1, 1fr vs auto</title>
+
+    <style>
+      .grid {
+        display: grid;
+        width: 500px;
+      }
+
+      .grid div:nth-child(1) {
+        background-color: #ff6666;
+      }
+
+      .grid div:nth-child(2) {
+        background-color: #74ddf2;
+      }
+
+      .grid div:nth-child(3) {
+        background-color: #f7f380;
+      }
+
+      .grid-using-fr {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      .grid-using-auto {
+        grid-template-columns: auto auto auto;
+      }
+    </style>
+  </head>
+  <body>
+
+    <p>
+      This grid uses fr:
+    </p>
+
+    <div class="grid grid-using-fr">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+    </div>
+
+    <p>
+      This grid uses auto:
+    </p>
+
+    <div class="grid grid-using-auto">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+    </div>
+
+  </body>
+</html>

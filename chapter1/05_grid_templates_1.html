@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chapter 1, using grid templates, part 1</title>
+
+  <style>
+    /* Micro-resetting */
+    body { padding: 0; margin: 0; }
+    * { box-sizing: border-box;, font-size: 25px; }
+
+    /* Making things visible on the page */
+    .container {
+      border: 2px solid #555;
+      padding: 8px;
+      min-height: 100vh;
+    }
+    header {
+      border: 2px solid #dd0808; /* Dark red */
+      background-color: #ff6666; /* Light red */
+    }
+    aside {
+      border: 2px solid #0ba7c6; /* Dark cyan */
+      background-color: #74ddf2; /* Light cyan */
+    }
+    main {
+      border: 2px solid #6f09e5; /* Dark purple */
+      background-color: #b880f7; /* Light purple */
+    }
+    footer {
+      border: 2px solid #c4be0d; /* Dark yellow */
+      background-color: #f7f380; /* Light yellow */
+    }
+
+    .container {
+      display: grid;
+      grid-template-areas:
+       "header  header  header  header"
+       "sidebar content content content"
+       "sidebar content content content"
+       "sidebar content content content"
+       "sidebar content content content"
+       "footer  footer  footer  footer"
+      ;
+      grid-template-rows: 200px 1fr 1fr 1fr 1fr 200px;
+      grid-template-columns: 150px 1fr 1fr 1fr;
+    }
+
+    header {
+      grid-area: header;
+    }
+    aside {
+      grid-area: sidebar;
+    }
+    main {
+      grid-area: content;
+    }
+    footer {
+      grid-area: footer;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header><!-- Header with a logo, navigation, etc. --></header>
+  <aside><!-- Partially related things like social buttons --></aside>
+  <main><!-- Main content, headings, teasers, etc. --></main>
+  <footer><!-- Footer with contact, FAQ, etc. --></footer>
+</div>
+</body>
+</html>

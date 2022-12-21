@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    /* Micro-resetting */
+    body { padding: 0; margin: 0; }
+    * { box-sizing: border-box;, font-size: 25px; }
+
+    /* Making things visible on the page */
+    .container {
+      border: 2px solid #555;
+      padding: 8px;
+      min-height: 100vh;
+    }
+    .element {
+      border: 2px solid #0ba7c6; /* Dark cyan */
+      background-color: #74ddf2; /* Light cyan */
+      padding: 10px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="element">Some element</div>
+    <div class="element">Some element</div>
+    <div class="element">Some element</div>
+    <div class="element">Some element</div>
+    <div class="element">Some element</div>
+    <div class="element">Some element</div>
+    <div class="element">Some element</div>
+    <div class="element">Some element</div>
+    <div class="element">Some element</div>
+    <div class="element">Some element</div>
+  </div>
+</body>

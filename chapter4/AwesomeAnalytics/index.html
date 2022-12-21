@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>AwesomeAnalytics - An example app for CSS Grid</title>
+
+  <!-- General setup -->
+  <link rel="stylesheet" href="node_modules/minireset.css/minireset.min.css">
+  <link rel="stylesheet" href="assets/css/brand.css">
+  <link rel="stylesheet" href="assets/css/icons.css">
+  <link rel="stylesheet" href="assets/css/typography.css">
+  <link rel="stylesheet" href="assets/css/general.css">
+
+  <!-- Components -->
+  <link rel="stylesheet" href="assets/css/page-header.css">
+  <link rel="stylesheet" href="assets/css/main-page-content.css">
+  <link rel="stylesheet" href="assets/css/plan-teasers.css">
+  <link rel="stylesheet" href="assets/css/testimonials.css">
+  <link rel="stylesheet" href="assets/css/feature-comparison.css">
+
+  <!-- Grid -->
+  <link rel="stylesheet" href="assets/css/grid_solution.css">
+</head>
+<body class="body">
+
+  <!-- Page header -->
+  <header class="page-header">
+    <h1 class="h1 page-title">
+      <span class="material-icons-outlined h1" aria-hidden="true">insights</span>
+      AwesomeAnalytics
+    </h1>
+
+    <a href="/">
+      <span class="material-icons-outlined h1">login</span>
+    </a>
+  </header>
+
+
+  <!-- Main page content with charts -->
+  <main class="main-page-content">
+    <h2 class="h1 pt pb">Sign up now!</h2>
+    <section class="teasers pb-xxl">
+      <div class="plan-teaser">
+        <h3 class="h2">
+          Small
+        </h3>
+        <p>
+          Only <strong>8.99</strong>
+        </p>
+
+        <p>
+          Includes some features.
+        </p>
+
+        <button>
+          Select plan
+        </button>
+      </div>
+      <div class="plan-teaser highlight">
+        <h3 class="h2">
+          Recommended
+        </h3>
+        <p>
+          Only <strong>12.99</strong>
+        </p>
+
+        <p>
+          Includes all features!
+        </p>
+
+        <button>
+          Select plan
+        </button>
+      </div>
+      <div class="plan-teaser">
+        <h3 class="h2">
+          Unnecessarily expensive
+        </h3>
+
+        <p>
+          Only <strong>99.99</strong>
+        </p>
+
+        <p>
+          Includes all features and more!
+        </p>
+
+        <button>
+          Select plan
+        </button>
+      </div>
+    </section>
+
+    <form method="POST" action="#" class="form pb-xxl">
+      <label for="name" class="full-width">
+        Full name
+      </label>
+      <input type="text" id="name" class="full-width">
+
+      <label for="email" class="full-width">
+        Email address
+      </label>
+      <input type="email" id="email" class="full-width">
+
+      <label for="phone" class="full-width">
+        Phone number
+      </label>
+      <input type="text" id="phone" class="full-width">
+
+      <label for="plan" class="full-width">
+        Your selected plan
+      </label>
+      <select id="plan" class="full-width">
+        <option>Recommended</option>
+        <option>Small</option>
+        <option>Unnecessarily expensive</option>
+      </select>
+
+      <label for="address">
+        Address
+      </label>
+      <label for="address_number">
+        No.
+      </label>
+
+      <input type="text" id="address">
+      <input type="text" id="address_number">
+
+      <label for="birthdate" class="full-width">
+        Birthdate
+      </label>
+      <input type="date" id="birthdate" class="full-width">
+
+      <button type="submit" class="full-width">
+        Sign up!
+      </button>
+    </form>
+
+    <section class="testimonials pb-xxl">
+      <div class="testimonial">
+        <h4 class="h3">
+          "Some testimonial"
+        </h4>
+        <span class="material-icons-outlined h1">star</span>
+        <span class="material-icons-outlined h1">star</span>
+        <span class="material-icons-outlined h1">star</span>
+        <span class="material-icons-outlined h1">star</span>
+        <span class="material-icons-outlined h1">star</span>
+
+        <p class="h4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tempor tortor, malesuada finibus risus. Quisque laoreet leo in lorem aliquam, in vulputate nibh tempus. Vivamus quis ante posuere, tempor.
+        </p>
+      </div>
+
+      <div class="testimonial">
+        <h4 class="h3">
+          "Some testimonial"
+        </h4>
+        <span class="material-icons-outlined h1">star</span>
+        <span class="material-icons-outlined h1">star</span>
+        <span class="material-icons-outlined h1">star</span>
+        <span class="material-icons-outlined h1">star</span>
+        <span class="material-icons-outlined h1">star</span>
+
+        <p class="h4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tempor tortor, malesuada finibus risus. Quisque laoreet leo in lorem aliquam, in vulputate nibh tempus. Vivamus quis ante posuere, tempor.
+        </p>
+      </div>
+
+      <div class="testimonial">
+        <h4 class="h3">
+          "Some testimonial"
+        </h4>
+        <span class="material-icons-outlined h1">star</span>
+        <span class="material-icons-outlined h1">star</span>
+        <span class="material-icons-outlined h1">star</span>
+        <span class="material-icons-outlined h1">star</span>
+        <span class="material-icons-outlined h1">star</span>
+
+        <p class="h4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tempor tortor, malesuada finibus risus. Quisque laoreet leo in lorem aliquam, in vulputate nibh tempus. Vivamus quis ante posuere, tempor.
+        </p>
+      </div>
+
+      <div class="testimonial">
+        <h4 class="h3">
+          "Some testimonial"
+        </h4>
+        <span class="material-icons-outlined h1">star</span>
+        <span class="material-icons-outlined h1">star</span>
+        <span class="material-icons-outlined h1">star</span>
+        <span class="material-icons-outlined h1">star</span>
+        <span class="material-icons-outlined h1">star</span>
+
+        <p class="h4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tempor tortor, malesuada finibus risus. Quisque laoreet leo in lorem aliquam, in vulputate nibh tempus. Vivamus quis ante posuere, tempor.
+        </p>
+      </div>
+
+      <div class="testimonial">
+        <h4 class="h3">
+          "Some testimonial"
+        </h4>
+        <span class="material-icons-outlined h1">star</span>
+        <span class="material-icons-outlined h1">star</span>
+        <span class="material-icons-outlined h1">star</span>
+        <span class="material-icons-outlined h1">star</span>
+        <span class="material-icons-outlined h1">star</span>
+
+        <p class="h4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tempor tortor, malesuada finibus risus. Quisque laoreet leo in lorem aliquam, in vulputate nibh tempus. Vivamus quis ante posuere, tempor.
+        </p>
+      </div>
+
+      <div class="testimonial">
+        <h4 class="h3">
+          "Some testimonial"
+        </h4>
+        <span class="material-icons-outlined h1">star</span>
+        <span class="material-icons-outlined h1">star</span>
+        <span class="material-icons-outlined h1">star</span>
+        <span class="material-icons-outlined h1">star</span>
+        <span class="material-icons-outlined h1">star</span>
+
+        <p class="h4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tempor tortor, malesuada finibus risus. Quisque laoreet leo in lorem aliquam, in vulputate nibh tempus. Vivamus quis ante posuere, tempor.
+        </p>
+      </div>
+
+      <div class="testimonial">
+        <h4 class="h3">
+          "Some testimonial"
+        </h4>
+        <span class="material-icons-outlined h1">star</span>
+        <span class="material-icons-outlined h1">star</span>
+        <span class="material-icons-outlined h1">star</span>
+        <span class="material-icons-outlined h1">star</span>
+        <span class="material-icons-outlined h1">star</span>
+
+        <p class="h4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tempor tortor, malesuada finibus risus. Quisque laoreet leo in lorem aliquam, in vulputate nibh tempus. Vivamus quis ante posuere, tempor.
+        </p>
+      </div>
+
+      <div class="testimonial">
+        <h4 class="h3">
+          "Some testimonial"
+        </h4>
+        <span class="material-icons-outlined h1">star</span>
+        <span class="material-icons-outlined h1">star</span>
+        <span class="material-icons-outlined h1">star</span>
+        <span class="material-icons-outlined h1">star</span>
+        <span class="material-icons-outlined h1">star</span>
+
+        <p class="h4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tempor tortor, malesuada finibus risus. Quisque laoreet leo in lorem aliquam, in vulputate nibh tempus. Vivamus quis ante posuere, tempor.
+        </p>
+      </div>
+    </section>
+
+    <table class="feature-comparison">
+      <tr>
+        <td></td>
+        <td>
+          <span class="table-label">Small</span>
+        </td>
+        <td>
+          <span class="table-label">Recommended</span>
+        </td>
+        <td>
+          <span class="table-label">Unnecessarily expensive</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Shows gibberish
+        </td>
+        <td>
+          <span class="material-icons-outlined h1">done_outline</span>
+        </td>
+        <td>
+          <span class="material-icons-outlined h1">done_outline</span>
+        </td>
+        <td>
+          <span class="material-icons-outlined h1">done_outline</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Shows gibberish in charts
+        </td>
+        <td>
+          <span class="material-icons-outlined h1">done_outline</span>
+        </td>
+        <td>
+          <span class="material-icons-outlined h1">done_outline</span>
+        </td>
+        <td>
+          <span class="material-icons-outlined h1">done_outline</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Has different charts
+        </td>
+        <td>
+          <span class="material-icons-outlined h1">close</span>
+        </td>
+        <td>
+          <span class="material-icons-outlined h1">done_outline</span>
+        </td>
+        <td>
+          <span class="material-icons-outlined h1">done_outline</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Shows charts in a grid
+        </td>
+        <td>
+          <span class="material-icons-outlined h1">close</span>
+        </td>
+        <td>
+          <span class="material-icons-outlined h1">done_outline</span>
+        </td>
+        <td>
+          <span class="material-icons-outlined h1">done_outline</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Has differently sized charts
+        </td>
+        <td>
+          <span class="material-icons-outlined h1">close</span>
+        </td>
+        <td>
+          <span class="material-icons-outlined h1">close</span>
+        </td>
+        <td>
+          <span class="material-icons-outlined h1">done_outline</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Aligns differently sized charts with the grid, too
+        </td>
+        <td>
+          <span class="material-icons-outlined h1">close</span>
+        </td>
+        <td>
+          <span class="material-icons-outlined h1">close</span>
+        </td>
+        <td>
+          <span class="material-icons-outlined h1">done_outline</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Costs a fortune
+        </td>
+        <td>
+          <span class="material-icons-outlined h1">close</span>
+        </td>
+        <td>
+          <span class="material-icons-outlined h1">close</span>
+        </td>
+        <td>
+          <span class="material-icons-outlined h1">done_outline</span>
+        </td>
+      </tr>
+    </table>
+  </main>
+</body>
+</html>

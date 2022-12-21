@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    /* Micro-resetting */
+    body { padding: 0; margin: 0; }
+    * { box-sizing: border-box;, font-size: 25px; }
+
+      /* Making things visible on the page */
+    .container {
+      border: 2px solid #555;
+      padding: 8px;
+      min-height: 100vh;
+    }
+    header {
+      border: 2px solid #dd0808; /* Dark red */
+      background-color: #ff6666; /* Light red */
+    }
+    aside {
+      border: 2px solid #0ba7c6; /* Dark cyan */
+      background-color: #74ddf2; /* Light cyan */
+    }
+    main {
+      border: 2px solid #6f09e5; /* Dark purple */
+      background-color: #b880f7; /* Light purple */
+    }
+    footer {
+      border: 2px solid #c4be0d; /* Dark yellow */
+      background-color: #f7f380; /* Light yellow */
+    }
+
+    .container {
+      display: grid;
+      grid-template:
+        "header" 100px
+        "aside" 50px
+        "main" 1fr
+        "footer" 100px
+      ;
+    }
+
+    header {
+      grid-area: header;
+    }
+    aside {
+      grid-area: aside;
+    }
+    main {
+      grid-area: main;
+    }
+    footer {
+      grid-area: footer;
+    }
+
+    @media screen and (orientation: landscape) {
+      .container {
+        grid-template:
+          "header header" 100px
+          "aside main" 1fr
+          "footer footer" 100px
+          / 200px 1fr
+        ;
+      }
+    }
+
+    @media screen and (min-width: 700px) {
+      .container {
+        grid-template:
+          "header header" 100px
+          "aside main" 1fr
+          "footer footer" 100px
+          / 200px 1fr
+        ;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header><!-- Header with a logo, navigation, etc. --></header>
+    <aside><!-- Partially related things like social buttons --></aside>
+    <main><!-- Main content, headings, teasers, etc. --></main>
+    <footer><!-- Footer with contact, FAQ, etc. --></footer>
+  </div>
+</body>
+</html>

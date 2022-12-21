@@ -1,0 +1,9 @@
+.feature-comparison {
+  margin-bottom: var(--spacing-xxl);
+}
+
+.feature-comparison td {
+  padding: var(--spacing-m);
+  width: 25%;
+  text-align: center;
+}

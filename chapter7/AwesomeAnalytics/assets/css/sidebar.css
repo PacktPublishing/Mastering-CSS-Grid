@@ -1,0 +1,61 @@
+.sidebar {
+  border-right: var(--border-standard);
+}
+
+.sidebar li {
+  line-height: var(--line-height-snug);
+}
+
+.sidebar li a {
+  padding: var(--spacing-m);
+}
+
+.sidebar li.active a {
+  background-color: var(--color-brand-light);
+}
+
+.sidebar li.active a,
+.sidebar li.active a:visited,
+.sidebar li.active a:link,
+.sidebar li.active a:hover {
+  color: var(--color-gray-0);
+}
+
+.sidebar .group li:first-child {
+  border-top: var(--border-standard);
+}
+
+.sidebar .group li:last-child {
+  border-bottom: var(--border-standard);
+}
+
+.sidebar .text {
+  max-width: 400px;
+  transition: all ease-in-out .2s;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.sidebar .icon {
+  transition: all ease-in-out .2s;
+}
+
+.sidebar.collapsed .icon {
+  margin-right: 0;
+}
+.sidebar.collapsed .text {
+  max-width: 0;
+}
+
+.sidebar .collapse-icon {
+  display: block;
+}
+.sidebar .expand-icon {
+  display: none;
+}
+
+.sidebar.collapsed .collapse-icon {
+  display: none;
+}
+.sidebar.collapsed .expand-icon {
+  display: block;
+}

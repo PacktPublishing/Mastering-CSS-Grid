@@ -1,6 +1,6 @@
 # Chapter 3: AwesomeAnalytics and code examples
 
-With this project, we can practice what we've learned in chapter one.
+With this project, we can practice what we've learned in chapter three.
 
 ## Getting started
 

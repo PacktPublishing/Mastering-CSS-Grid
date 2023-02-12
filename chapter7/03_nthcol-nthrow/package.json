@@ -1,0 +1,17 @@
+{
+  "name": "nthcol-nthrow",
+  "version": "1.0.0",
+  "description": "Polyfill of nth-col and nth-row selectors",
+  "scripts": {
+    "build": "./node_modules/.bin/browserify src/main.js > dist/main.js"
+  },
+  "author": "Pascal Thormeier",
+  "license": "MIT",
+  "dependencies": {
+    "postcss": "^8.4.21",
+    "algebra.js": "^0.2.6",
+    "browserify": "^17.0.0",
+    "postcss-cli": "^10.1.0",
+    "slugify": "^1.6.5"
+  }
+}

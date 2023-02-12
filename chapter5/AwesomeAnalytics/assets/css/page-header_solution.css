@@ -1,0 +1,21 @@
+.page-header {
+  padding: var(--spacing-l);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  border-bottom: var(--border-standard);
+}
+
+.page-header > a {
+  justify-self: end;
+}
+
+.page-title {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.page-title .material-icons-outlined {
+  margin-right: var(--spacing-m);
+}

@@ -1,0 +1,13 @@
+{
+  "name": "animations",
+  "version": "1.0.0",
+  "description": "Grid animations using animate-css-grid",
+  "scripts": {
+    "build": "./node_modules/.bin/browserify src/main.js > dist/main.js"
+  },
+  "author": "Pascal Thormeier",
+  "license": "MIT",
+  "dependencies": {
+    "animate-css-grid": "^1.4.3"
+  }
+}

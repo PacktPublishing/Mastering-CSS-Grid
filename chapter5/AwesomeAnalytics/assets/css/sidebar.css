@@ -1,0 +1,69 @@
+.sidebar {
+  border-right: var(--border-standard);
+}
+
+.sidebar nav {
+  position: sticky;
+  top: 0;
+}
+
+.sidebar li {
+  padding: var(--spacing-m);
+  margin: var(--spacing-m);
+  border-radius: var(--spacing-s);
+  line-height: var(--line-height-snug);
+}
+.sidebar li:first-child {
+  margin-top: 0;
+}
+
+.sidebar li.active {
+  background-color: var(--color-brand-light);
+}
+
+.sidebar li.active a,
+.sidebar li.active a:visited,
+.sidebar li.active a:link,
+.sidebar li.active a:hover {
+  color: var(--color-gray-0);
+}
+
+.sidebar li a {
+  height: 24px;
+}
+
+.sidebar .group {
+  padding-top: var(--spacing-m);
+  border-bottom: var(--border-standard);
+}
+
+.sidebar .text {
+  max-width: 400px;
+  transition: all ease-in-out .2s;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.sidebar .icon {
+  transition: all ease-in-out .2s;
+}
+
+.sidebar.collapsed .icon {
+  margin-right: 0;
+}
+.sidebar.collapsed .text {
+  max-width: 0;
+}
+
+.sidebar .collapse-icon {
+  display: block;
+}
+.sidebar .expand-icon {
+  display: none;
+}
+
+.sidebar.collapsed .collapse-icon {
+  display: none;
+}
+.sidebar.collapsed .expand-icon {
+  display: block;
+}

@@ -1,0 +1,20 @@
+.chart-box {
+  background-color: var(--color-gray-0);
+  border: var(--border-standard);
+  border-radius: 4px;
+  padding: var(--spacing-l);
+
+  min-width: 0;
+  min-height: 0;
+
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 1fr;
+}
+
+.chart-box header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+
+  text-transform: capitalize
+}

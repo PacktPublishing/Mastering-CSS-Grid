@@ -1,11 +1,11 @@
-# Chapter 4: AwesomeAnalytics and code examples
+# Chapter 5: AwesomeAnalytics
 
-With this project, we can practice what we've learned in chapter four.
+With this project, we can practice what we've learned in chapter five.
 
 ## Getting started
 
 1. Clone this repository
-2. Install dependencies using npm: 
+2. Install dependencies using npm:
    ```bash
    $ cd chapter4/AwesomeAnalytics
    $ npm install

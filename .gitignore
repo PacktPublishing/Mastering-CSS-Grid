@@ -1,1 +1,3 @@
 */node_modules
+chapter8/01_tailwind/dist/*
+!chapter8/01_tailwind/dist/.gitkeep

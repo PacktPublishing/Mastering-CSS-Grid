@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+.grid-container {
+  width: 400px;
+  display: grid;
+  grid-template-columns: 100px 1fr 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px 100px;
+  gap: 10px;
+}
+
+.grid-element {
+  border: 3px solid #2146C7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wide {
+  grid-column: span 2;
+}
+
+.tall {
+  grid-row: span 2;
+}
+
+/* Every even col is yellow */
+.grid-element:nth-col(2n) {
+  background-color: #f7f380;
+}
+
+/* Every even row is blue */
+.grid-element:nth-row(2n) {
+  background-color: #74ddf2;
+}
+
+/* Every odd col is green */
+.grid-element:nth-col(2n + 1) {
+  background-color: #77dd77;
+}
+
+.subgrid {
+  display: subgrid;
+}

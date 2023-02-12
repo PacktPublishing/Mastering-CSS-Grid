@@ -1,0 +1,38 @@
+.body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-header {
+  width: 100%;
+}
+
+.sidebar {
+  flex: 0 1 auto;
+}
+
+.main-page-content {
+  flex: 1;
+}
+
+.main-page-content {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: var(--spacing-l);
+  row-gap: var(--spacing-l);
+}
+
+.chart-box {
+  height: 400px;
+  flex: 0 1 25%;
+  width: 25%;
+}
+
+.chart-box-wide {
+  flex: 0 1 50%;
+  width: 50%;
+}
+
+.chart-box-tall {
+  height: 800px;
+}

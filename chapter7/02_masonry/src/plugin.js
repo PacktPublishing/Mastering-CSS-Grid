@@ -1,60 +1,6 @@
 const plugin = () => ({
   postcssPlugin: 'subgrid',
   prepare() {
-    const determinePosition = (el, rowGap, columnGap, gridTemplateRows, gridTemplateColumns) => {
-      let offsetLeft = el.offsetLeft - el.parentNode.offsetLeft
-      let offsetTop = el.offsetTop - el.parentNode.offsetTop
-
-      let elWidth = el.clientWidth
-      let elHeight = el.clientHeight
-
-      const rowGapInt = parseInt(rowGap)
-      const colGapInt = parseInt(columnGap)
-
-      // Float and rounding to deal with half-pixels
-      const rowDefinitions = gridTemplateRows.split(' ').map(r => Math.round(parseFloat(r)))
-      const colDefinitions = gridTemplateColumns.split(' ').map(c => Math.round(parseFloat(c)))
-
-      let currentRow = 0
-      while (offsetTop > 0) {
-        offsetTop -= rowGapInt
-        offsetTop -= rowDefinitions[currentRow]
-
-        currentRow++
-      }
-
-      let height = 0
-      while (elHeight > 0) {
-        elHeight -= rowGapInt
-        elHeight -= rowDefinitions[currentRow + height]
-
-        height++
-      }
-
-      let currentCol = 0
-      while (offsetLeft > 0) {
-        offsetLeft -= colGapInt
-        offsetLeft -= colDefinitions[currentCol]
-
-        currentCol++
-      }
-
-      let width = 0
-      while (elWidth > 0) {
-        elWidth -= colGapInt
-        elWidth -= colDefinitions[currentCol + width]
-
-        width++
-      }
-
-      return {
-        row: currentRow,
-        col: currentCol,
-        width: width,
-        height: height,
-      }
-    }
-
     const masonrySelectors = []
 
     return {

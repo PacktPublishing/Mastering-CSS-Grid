@@ -16,6 +16,6 @@
     "chart.js": "^3.9.1",
     "lighten-darken-color": "^1.0.0",
     "minireset.css": "0.0.7",
-    "serve": "^14.0.1"
+    "serve": "^14.2.0"
   }
 }

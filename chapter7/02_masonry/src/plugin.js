@@ -55,23 +55,15 @@ const plugin = () => ({
       }
     }
 
-    const subgridElements = []
+    const masonrySelectors = []
 
     return {
       Rule (rule) {
-        if (rule.nodes.some(n => n.prop === 'display' && n.value === 'grid')) {
-          // We've got a candidate
-
-          const hasRowsSubgrid = rule.nodes.some(n => n.prop === 'grid-template-rows' && n.value === 'subgrid')
-          const hasColsSubgrid = rule.nodes.some(n => n.prop === 'grid-template-columns' && n.value === 'subgrid')
-
-          if (hasRowsSubgrid || hasColsSubgrid) {
-            subgridElements.push({
-              selector: rule.selector,
-              hasRowsSubgrid,
-              hasColsSubgrid
-            })
-          }
+        if (
+          rule.nodes.some(n => n.prop === 'display' && n.value === 'grid')
+          && rule.nodes.some(n => n.prop === 'grid-template-rows' && n.value === 'masonry')
+        ) {
+          masonrySelectors.push(rule.selector)
         }
       },
 
@@ -81,31 +73,41 @@ const plugin = () => ({
           return
         }
 
-        subgridElements.forEach(subgridEl => {
-          [...document.querySelectorAll(subgridEl.selector)].forEach(domEl => {
-            const { rowGap, columnGap, gridTemplateRows, gridTemplateColumns } = getComputedStyle(domEl.parentNode)
-            const { row, col, width, height } = determinePosition(domEl, rowGap, columnGap, gridTemplateRows, gridTemplateColumns)
+        window.addEventListener('load', () => {
+          console.log('loaded!', masonrySelectors)
 
-            const gridRows = gridTemplateRows.split(' ')
-            const gridCols = gridTemplateColumns.split(' ')
+          masonrySelectors.forEach(selector => {
+            Array.from(document.querySelectorAll(selector)).forEach(el => {
+              el.style.gridTemplateRows = ''
+              el.style.gridAutoRows = 'min-content'
 
-            let style = ''
+              const { rowGap, gridTemplateColumns } = getComputedStyle(el)
+              const numberOfColumns = gridTemplateColumns.split(' ').length
+              const containerOffsetTop = parseInt(el.offsetTop)
 
-            if (subgridEl.hasRowsSubgrid) {
-              style += `
-                row-gap: ${rowGap};
-                grid-template-rows: ${gridRows.slice(row, row + height).join(' ')};
-              `
-            }
+              console.log(gridTemplateColumns, numberOfColumns)
 
-            if (subgridEl.hasColsSubgrid) {
-              style += `
-                column-gap: ${columnGap};
-                grid-template-columns: ${gridCols.slice(col, col + width).join(' ')};
-              `
-            }
+              Array.from(el.children).forEach(el => el.style.display = 'none')
+              Array.from(el.children).forEach(el => {
+                el.style.display = 'block'
+                el.setAttribute('data-height', getComputedStyle(el).height)
+                el.style.display = 'none'
+              })
+              Array.from(el.children).forEach(el => el.style.display = 'inline')
 
-            domEl.setAttribute('style', style)
+
+              let i = 0;
+              for (let i = numberOfColumns; i < el.children.length; i++) {
+                const currentEl = el.children[i]
+                const aboveEl = el.children[i - numberOfColumns]
+                const aboveElOffsetTop = aboveEl.offsetTop
+
+                const shiftUp = currentEl.offsetTop - aboveElOffsetTop - parseInt(aboveEl.getAttribute('data-height')) - parseInt(rowGap)
+
+                currentEl.style.marginTop = `-${shiftUp}px`
+              }
+
+            })
           })
         })
       }

@@ -4,7 +4,7 @@
   "description": "Accompanying project for the CSS Grid book",
   "scripts": {
     "build-tailwind": "npx tailwindcss -i ./assets/css/tailwind_input.css -o ./assets/css/tailwind_output.css",
-    "serve": "node ./node_modules/.bin/serve ."
+    "serve": "npx serve ."
   },
   "author": "Pascal Thormeier",
   "license": "MIT",

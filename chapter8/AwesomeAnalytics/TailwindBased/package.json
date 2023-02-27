@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "Accompanying project for the CSS Grid book",
   "scripts": {
+    "build-tailwind": "npx tailwindcss -i ./assets/css/tailwind_input.css -o ./assets/css/tailwind_output.css",
     "serve": "node ./node_modules/.bin/serve ."
   },
   "author": "Pascal Thormeier",
   "license": "MIT",
   "dependencies": {
+    "tailwindcss": "^3.2.7",
     "@faker-js/faker": "^7.6.0",
     "@fontsource/inter": "^4.5.14",
     "@fontsource/material-icons": "^4.5.4",

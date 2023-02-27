@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Accompanying project for the CSS Grid book",
   "scripts": {
-    "serve": "node ./node_modules/.bin/serve ."
+    "serve": "npx serve ."
   },
   "author": "Pascal Thormeier",
   "license": "MIT",
@@ -15,7 +15,6 @@
     "bootstrap": "^5.3.0-alpha1",
     "chart.js": "^3.9.1",
     "lighten-darken-color": "^1.0.0",
-    "minireset.css": "0.0.7",
-    "serve": "^14.0.1"
+    "minireset.css": "0.0.7"
   }
 }

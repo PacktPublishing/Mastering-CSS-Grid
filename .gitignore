@@ -1,3 +1,4 @@
 */node_modules
 chapter8/01_tailwind/dist/*
 !chapter8/01_tailwind/dist/.gitkeep
+chapter8/AwesomeAnalytics/TailwindBased/assets/css/tailwind_output.css

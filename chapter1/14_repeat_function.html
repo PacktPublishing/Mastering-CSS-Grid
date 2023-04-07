@@ -7,7 +7,13 @@
     .gallery-container {
       width: 100vw;
       display: grid;
-      grid-template-columns: 100px repeat(10, 1fr) 100px;
+      grid-template-columns: repeat(8, 100px);
+      grid-template-rows: repeat(16, 100px);
+      gap: 10px;
+    }
+
+    .gallery-container div {
+      background-color: lightblue;
     }
   </style>
 </head>

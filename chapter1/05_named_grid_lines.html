@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Chapter 1, using grid templates, part 1</title>
+  <title>Chapter 1, using named grid lines</title>
 
   <style>
     /* Micro-resetting */
     body { padding: 0; margin: 0; }
-    * { box-sizing: border-box;, font-size: 25px; }
+    * { box-sizing: border-box; font-size: 25px; }
 
     /* Making things visible on the page */
     .container {
@@ -33,16 +33,9 @@
 
     .container {
       display: grid;
-      grid-template-areas:
-       "header  header  header  header"
-       "sidebar content content content"
-       "sidebar content content content"
-       "sidebar content content content"
-       "sidebar content content content"
-       "footer  footer  footer  footer"
-      ;
-      grid-template-rows: 200px 1fr 1fr 1fr 1fr 200px;
-      grid-template-columns: 150px 1fr 1fr 1fr;
+
+      grid-template-columns: [header-start sidebar-start footer-start] 1fr [sidebar-end content-start] 3fr [header-end content-end footer-end];
+      grid-template-rows: [header-start] 1fr [header-end sidebar-start content-start] 4fr [sidebar-end content-end footer-start] 1fr [footer-end];
     }
 
     header {
@@ -57,14 +50,14 @@
     footer {
       grid-area: footer;
     }
-  </style>
-</head>
-<body>
-<div class="container">
-  <header><!-- Header with a logo, navigation, etc. --></header>
-  <aside><!-- Partially related things like social buttons --></aside>
-  <main><!-- Main content, headings, teasers, etc. --></main>
-  <footer><!-- Footer with contact, FAQ, etc. --></footer>
-</div>
-</body>
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header><!-- Header with a logo, navigation, etc. --></header>
+      <aside><!-- Partially related things like social buttons --></aside>
+      <main><!-- Main content, headings, teasers, etc. --></main>
+      <footer><!-- Footer with contact, FAQ, etc. --></footer>
+    </div>
+  </body>
 </html>

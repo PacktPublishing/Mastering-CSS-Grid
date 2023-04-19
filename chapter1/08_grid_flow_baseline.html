@@ -6,35 +6,40 @@
     <style>
       .container {
         display: grid;
-        grid-template-columns: repeat(5, 100px);
-        grid-template-rows: repeat(6, 100px);
+        grid-template-columns: 100px 100px 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px 100px 100px 100px;
         gap: 5px;
       }
-      .small {
+      .container > div {
         background-color: darkblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: bold;
       }
       .large {
-        grid-column: auto / span 2;
-        grid-row: auto / span 2;
-        background-color: darkblue;
+        grid-column-end: span 2;
+        grid-row-end: span 2;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="small"></div>
-      <div class="large"></div>
-      <div class="large"></div>
-      <div class="large"></div>
-      <div class="large"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
+      <div class="small">1</div>
+      <div class="large">2</div>
+      <div class="large">3</div>
+      <div class="large">4</div>
+      <div class="large">5</div>
+      <div class="small">6</div>
+      <div class="small">7</div>
+      <div class="small">8</div>
+      <div class="small">9</div>
+      <div class="small">10</div>
+      <div class="small">11</div>
+      <div class="small">12</div>
+      <div class="small">13</div>
     </div>
   </body>
 </html>

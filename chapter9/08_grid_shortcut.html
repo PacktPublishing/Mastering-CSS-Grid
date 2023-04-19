@@ -1,0 +1,54 @@
+<style>
+  .grid-shortcut {
+    display: grid;
+    grid: 100px 100px 100px / 100px 100px;
+  }
+</style>
+
+<div class="grid-shortcut">
+  <div>A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+  <div>E</div>
+  <div>F</div>
+  <div>G</div>
+</div>
+
+
+
+<style>
+  .column-dense-shortcut {
+    display: grid;
+    grid: 150px 1fr / auto-flow dense 100px;
+  }
+</style>
+
+<div class="column-dense-shortcut">
+  <div>A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+  <div>E</div>
+  <div>F</div>
+  <div>G</div>
+</div>
+
+
+
+<style>
+  .row-dense-shortcut {
+    display: grid;
+    grid: auto-flow dense 100px 100px / 150px 1fr;
+  }
+</style>
+
+<div class="row-dense-shortcut">
+  <div>A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+  <div>E</div>
+  <div>F</div>
+  <div>G</div>
+</div>

@@ -1,0 +1,35 @@
+<style>
+  :root {
+    --sidebar-width: 1fr;
+    --content-width: 3fr;
+    --header-height: auto;
+    --footer-height: auto;
+    --gap-size: 16px;
+  }
+
+  .layout {
+    display: grid;
+    grid-template-columns: var(--sidebar-width) var(--content-width);
+    grid-template-rows: var(--header-height) 1fr var(--footer-height);
+    gap: var(--gap-size);
+  }
+
+  .layout header, .layout footer {
+    grid-column: span 2;
+  }
+</style>
+
+<div class="layout">
+  <header>
+    Header
+  </header>
+  <aside>
+    Sidebar
+  </aside>
+  <main>
+    Content
+  </main>
+  <footer>
+    Footer
+  </footer>
+</div>

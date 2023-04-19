@@ -1,0 +1,42 @@
+<style>
+  .gantt-chart {
+    display: grid;
+    grid-template-columns: 100px repeat(10, 1fr);
+  }
+  .gantt-chart .phase-title {
+    grid-column: 1;
+  }
+  .gantt-chart .phase {
+    background-color: #aaf;
+  }
+</style>
+
+<div class="gantt-chart">
+  <div>Phase</div>
+  <div>Week 1</div>
+  <div>Week 2</div>
+  <div>Week 3</div>
+  <div>Week 4</div>
+  <div>Week 5</div>
+  <div>Week 6</div>
+  <div>Week 7</div>
+  <div>Week 8</div>
+  <div>Week 9</div>
+  <div>Week 10</div>
+
+  <div class="phase-title">Phase 1</div>
+  <div class="phase" style="grid-row: 2; grid-column: 2 / span 4;">
+    From week 1 to week 4
+  </div>
+
+  <div class="phase-title">Phase 2</div>
+  <div class="phase" style="grid-row: 3; grid-column: 3 / span 3">
+    From week 2 to week 4
+  </div>
+
+  <div class="phase-title">Phase 3</div>
+  <div class="phase" style="grid-row: 4; grid-column: 5 / span 3;">
+    From week 4 to week 6
+  </div>
+  <!—More phases… -->
+</div>

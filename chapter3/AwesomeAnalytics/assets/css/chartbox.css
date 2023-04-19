@@ -1,7 +1,6 @@
 .chart-box {
   background-color: var(--color-gray-0);
   border: var(--border-standard);
-  padding: var(--spacing-l);
 
   min-width: 0;
   min-height: 0;
@@ -11,12 +10,14 @@
 }
 
 .chart-box header {
+  padding: var(--spacing-l);
   display: flex;
   justify-content: space-between;
   text-transform: capitalize
 }
 
 .chart-box .chart-container {
+  padding: var(--spacing-l);
   margin: var(--spacing-m);
   flex: 1 1 1px;
 }

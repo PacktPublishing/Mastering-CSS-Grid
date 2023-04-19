@@ -48,7 +48,7 @@
 }
 
 .sidebar.collapsed .icon {
-  margin-right: 0;
+  margin-inline-end: 0;
 }
 .sidebar.collapsed .text {
   max-width: 0;

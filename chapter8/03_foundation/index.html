@@ -10,50 +10,48 @@
   <body>
     <h1>Foundation grid</h1>
 
-    <div class="grid-x grid-padding-x">
-      <div class="large-8 medium-8 cell">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
+    <h2>Float-based grid</h2>
 
-        <div class="grid-x grid-padding-x">
-          <div class="large-12 cell">
-            <div class="primary callout">
-              <p><strong>This is a twelve cell section in a grid-x.</strong> Each of these includes a div.callout element so you can see where the cell are - it's not required at all for the grid.</p>
-            </div>
-          </div>
-        </div>
-        <div class="grid-x grid-padding-x">
-          <div class="large-6 medium-6 cell">
-            <div class="primary callout">
-              <p>Six cell</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 cell">
-            <div class="primary callout">
-              <p>Six cell</p>
-            </div>
-          </div>
-        </div>
-        <div class="grid-x grid-padding-x">
-          <div class="large-4 medium-4 small-4 cell">
-            <div class="primary callout">
-              <p>Four cell</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 cell">
-            <div class="primary callout">
-              <p>Four cell</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 cell">
-            <div class="primary callout">
-              <p>Four cell</p>
-            </div>
-          </div>
+    <header>
+      Header, no grid necessary.
+    </header>
+
+    <div class="row">
+      <aside class="columns small-12 medium-4">
+        Sidebar
+      </aside>
+
+      <main class="columns">
+        Content
+      </main>
+    </div>
+
+    <footer>
+      Footer, no grid necessary
+    </footer>
+
+    <h2>X/Y Grid</h2>
+
+    <div class="grid-frame">
+      <div class="grid-y">
+        <header class="cell small-2">
+          Header, 2/12 tall
+        </header>
+
+        <div class="grid-x">
+          <aside class="cell medium-4">
+            Sidebar
+          </aside>
+
+          <main class="cell">
+            Content
+          </main>
         </div>
 
+        <footer class="cell small-2">
+          Footer, 2/12 tall
+        </footer>
       </div>
-
     </div>
 
     <script src="node_modules/jquery/dist/jquery.js"></script>

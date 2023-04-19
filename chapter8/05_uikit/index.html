@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/uikit.css">
+  </head>
+  <body>
+    <h1>UiKit</h1>
+
+    <h2>Basic grid</h2>
+
+    <div uk-grid>
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+      <div>E</div>
+    </div>
+
+    <h2>Height-matched grid</h2>
+
+    <div uk-grid uk-height-match="target: > div > .uk-card">
+      <div>
+        <div class="uk-card uk-card-default">
+          Some<br>Large<br>Content
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-default">Content</div>
+      </div>
+    </div>
+
+    <script src="js/uikit.js"></script>
+  </body>
+</html>

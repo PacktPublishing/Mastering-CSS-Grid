@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit , minmax(100px, 1fr));
+        gap: 5px;
+        margin-bottom: 20px;
+        background-color: lightcoral;
+        padding: 10px;
+      }
+      .small {
+        width: 375px;
+      }
+      .large {
+        width: 750px;
+      }
+      .container div {
+        background-color: darkred;
+        height: 20px;
+      }
+    </style>
+  </head>
+  <body>
+  <p>Width: 375px;</p>
+  <div class="container small">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <p>Width: 750px;</p>
+  <div class="container large">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  </body>
+</html>

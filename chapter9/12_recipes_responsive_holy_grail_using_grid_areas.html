@@ -1,0 +1,60 @@
+<style>
+  :root {
+    --sidebar-width: 1fr;
+    --sidebar-height-mobile: auto;
+    --content-width: 3fr;
+    --header-height: auto;
+    --footer-height: auto;
+    --gap-size: 16px;
+  }
+
+  .layout {
+    display: grid;
+    gap: var(--gap-size);
+    grid-template:
+      "header" var(--header-height)
+      "sidebar" var(--sidebar-height-mobile)
+      "content" 1fr
+      "footer" var(--footer-height)
+    / 1fr
+  ;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .layout {
+      grid-template:
+        "header header" var(--header-height)
+        "sidebar content" 1fr
+        "footer footer" var(--footer-height)
+      / var(--sidebar-width) var(--content-width);
+    }
+  }
+
+  .layout header {
+    grid-area: header;
+  }
+  .layout aside {
+    grid-area: sidebar;
+  }
+  .layout main {
+    grid-area: content;
+  }
+  .layout footer {
+    grid-area: footer;
+  }
+</style>
+
+<div class="layout">
+  <header>
+    Header
+  </header>
+  <aside>
+    Sidebar
+  </aside>
+  <main>
+    Content
+  </main>
+  <footer>
+    Footer
+  </footer>
+</div>

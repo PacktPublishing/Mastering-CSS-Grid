@@ -41,3 +41,22 @@ nav > ul {
 .chart-box-tall {
   grid-row: span 20;
 }
+
+.chart-box {
+  display: grid;
+  grid-template-rows: subgrid;
+}
+
+.chart-box header {
+  grid-row: span 1;
+  display: flex;
+  align-items: center;
+}
+
+.chart-box .chart-container {
+  grid-row: span 9;
+}
+
+.chart-box-tall .chart-container {
+  grid-row: span 19;
+}

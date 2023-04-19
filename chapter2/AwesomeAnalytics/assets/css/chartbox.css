@@ -14,7 +14,7 @@
 .chart-box header {
   display: flex;
   justify-content: space-between;
-  text-transform: capitalize
+  text-transform: capitalize;
 }
 
 .chart-box .chart-container {

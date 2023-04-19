@@ -1,0 +1,32 @@
+<style>
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+  }
+
+  .gallery > div {
+    aspect-ratio: 1 / 1;
+  }
+
+  .gallery > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+</style>
+
+<div class="gallery">
+  <div>
+    <img src="https://via.placeholder.com/300x120" alt="...">
+  </div>
+  <div>
+    <img src="https://via.placeholder.com/300x120" alt="...">
+  </div>
+  <div>
+    <img src="https://via.placeholder.com/300x120" alt="...">
+  </div>
+  <div>
+    <img src="https://via.placeholder.com/300x120" alt="...">
+  </div>
+</div>

@@ -1,0 +1,109 @@
+<style>
+  .grid-auto-flow-row {
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+    grid-auto-columns: 100px;
+    grid-auto-flow: row;
+  }
+
+  .grid-auto-flow-row div {
+    background-color: #f00;
+  }
+</style>
+
+<div class="grid-auto-flow-row">
+  <div>A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+  <div>E</div>
+  <div>F</div>
+  <div>G</div>
+</div>
+
+
+
+<style>
+  .grid-auto-flow-col {
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+    grid-auto-columns: 100px;
+    grid-auto-flow: column;
+  }
+
+  .grid-auto-flow-col div {
+    background-color: #f00;
+  }
+</style>
+
+<div class="grid-auto-flow-col">
+  <div>A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+  <div>E</div>
+  <div>F</div>
+  <div>G</div>
+</div>
+
+
+
+<style>
+  .grid-auto-flow-row-dense {
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+    grid-auto-columns: 100px;
+    grid-auto-flow: row dense;
+  }
+
+  .grid-auto-flow-row-dense div {
+    background-color: #f00;
+  }
+
+  .grid-auto-flow-row-dense .wide {
+    grid-column: span 2;
+  }
+</style>
+
+<div class="grid-auto-flow-row-dense">
+  <div>A</div>
+  <div class="wide">B</div>
+  <div class="wide">C</div>
+  <div>D</div>
+  <div>E</div>
+  <div>F</div>
+  <div>G</div>
+</div>
+
+
+
+<style>
+  .grid-auto-flow-column-dense {
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+    grid-auto-columns: 100px;
+    grid-auto-flow: column dense;
+  }
+
+  .grid-auto-flow-column-dense div {
+    background-color: #f00;
+  }
+
+  .grid-auto-flow-column-dense .tall {
+    grid-row: span 2;
+  }
+</style>
+
+<div class="grid-auto-flow-column-dense">
+  <div>A</div>
+  <div class="tall">B</div>
+  <div class="tall">C</div>
+  <div>D</div>
+  <div>E</div>
+  <div>F</div>
+  <div>G</div>
+</div>

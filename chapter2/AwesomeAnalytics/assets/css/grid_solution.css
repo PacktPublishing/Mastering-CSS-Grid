@@ -2,8 +2,8 @@
   display: grid;
 
   grid-template:
-    "header  header " min-content;
-    "sidebar content" auto;
+    'header header  ' min-content
+    'sidebar content' auto;
 
   grid-template-columns: auto 1fr;
 }

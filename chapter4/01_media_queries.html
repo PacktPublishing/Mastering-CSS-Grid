@@ -74,6 +74,30 @@
         ;
       }
     }
+
+
+    .container {
+      display: grid;
+      grid-template:
+        "header" 100px
+        "main" 1fr
+        "footer" 100px
+    ;
+    }
+
+    header {
+      grid-area: header;
+    }
+    aside {
+      grid-area: aside;
+    }
+    main {
+      grid-area: main;
+    }
+    footer {
+      grid-area: footer;
+    }
+
   </style>
 </head>
 <body>

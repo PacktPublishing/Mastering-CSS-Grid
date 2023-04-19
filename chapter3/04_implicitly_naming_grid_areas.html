@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border: 10px solid #333;
+
+  min-height: 100vh;
+  display: grid;
+
+  grid-template-columns: [header-start sidebar-start footer-start] 300px [sidebar-end content-start] 1fr [header-end content-end footer-end];
+  grid-template-rows: [header-start] 100px [header-end sidebar-start content-start] 1fr [sidebar-end content-end footer-start] 100px [footer-end];
+}
+
+header {
+  border: 2px solid #dd0808; /* Dark red */
+  background-color: #ff6666; /* Light red */
+  grid-area: header;
+}
+aside {
+  border: 2px solid #0ba7c6; /* Dark cyan */
+  background-color: #74ddf2; /* Light cyan */
+  grid-area: sidebar;
+}
+main {
+  border: 2px solid #6f09e5; /* Dark purple */
+  background-color: #b880f7; /* Light purple */
+  grid-area: content;
+}
+footer {
+  border: 2px solid #c4be0d; /* Dark yellow */
+  background-color: #f7f380; /* Light yellow */
+  grid-area: footer;
+}
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <!-- Header + navigation -->
+  </header>
+  <aside class="aside">
+    <!-- Sidebar -->
+  </aside>
+  <main class="main">
+    <!-- Content -->
+  </main>
+  <footer class="footer">
+    <!-- Footer -->
+  </footer>
+</div>
+</body>
+</html>

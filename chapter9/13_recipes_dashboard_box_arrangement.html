@@ -1,0 +1,24 @@
+<style>
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 300px;
+    grid-auto-flow: row dense;
+  }
+
+  .dashboard-grid .tall {
+    grid-row: span 2;
+  }
+
+  .dashboard-grid .wide {
+    grid-column: span 2;
+  }
+
+</style>
+
+<div class="dashboard-grid">
+  <div>Standard-sized box</div>
+  <div class="wide">Wide box</div>
+  <div class="tall">Tall box</div>
+  <div class="wide tall">Two-by-two box</div>
+</div>

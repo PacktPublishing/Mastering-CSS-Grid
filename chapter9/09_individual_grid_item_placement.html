@@ -1,0 +1,301 @@
+<style>
+  .grid-column-placement {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+  }
+
+  .grid-column-placement div {
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    background-color: #f00;
+  }
+</style>
+
+<div class="grid-column-placement">
+  <div>A</div>
+</div>
+
+
+
+<style>
+  .grid-column-placement-shortcut {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+  }
+
+  .grid-column-placement-shortcut div {
+    grid-column: 2 / span 2;
+    background-color: #f00;
+  }
+</style>
+
+<div class="grid-column-placement-shortcut">
+  <div>A</div>
+</div>
+
+
+
+<style>
+  .grid-row-placement {
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px;
+  }
+
+  .grid-row-placement div {
+    grid-row-start: 2;
+    grid-row-end: span 2;
+    background-color: #f00;
+  }
+</style>
+
+<div class="grid-row-placement">
+  <div>A</div>
+</div>
+
+
+
+<style>
+  .grid-row-placement-shortcut {
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px;
+  }
+
+  .grid-row-placement-shortcut div {
+    grid-row: 2 / span 2;
+    background-color: #f00;
+  }
+</style>
+
+<div class="grid-row-placement-shortcut">
+  <div>A</div>
+</div>
+
+
+
+<style>
+  .grid-area-placement {
+    display: grid;
+    grid-template:
+      'A B C' 100px
+      'A B C' 100px
+      'D D D' 100px
+      / 100px 100px 100px
+    ;
+  }
+
+  .grid-area-placement div {
+    grid-area: B;
+    background-color: #f00;
+  }
+</style>
+
+<div class="grid-area-placement">
+  <div>B</div>
+</div>
+
+
+
+<style>
+  .align-start-grid {
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 100px 100px;
+  }
+
+  .align-start-grid .self-placing {
+    align-self: start;
+  }
+</style>
+
+<div class="align-start-grid">
+  <div class="self-placing">A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+</div>
+
+
+
+<style>
+  .align-end-grid {
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 100px 100px;
+  }
+
+  .align-end-grid .self-placing {
+    align-self: end;
+  }
+</style>
+
+<div class="align-end-grid">
+  <div class="self-placing">A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+</div>
+
+
+
+<style>
+  .align-center-grid {
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 100px 100px;
+  }
+
+  .align-center-grid .self-placing {
+    align-self: center;
+  }
+</style>
+
+<div class="align-center-grid">
+  <div class="self-placing">A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+</div>
+
+
+
+<style>
+  .align-stretch-grid {
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 100px 100px;
+  }
+
+  .align-stretch-grid .self-placing {
+    align-self: stretch;
+  }
+</style>
+
+<div class="align-stretch-grid">
+  <div class="self-placing">A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+</div>
+
+
+
+<style>
+  .justify-start-grid {
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 100px 100px;
+  }
+
+  .justify-start-grid .self-placing {
+    justify-self: start;
+  }
+</style>
+
+<div class="justify-start-grid">
+  <div class="self-placing">A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+</div>
+
+
+
+<style>
+  .justify-end-grid {
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 100px 100px;
+  }
+
+  .justify-end-grid .self-placing {
+    justify-self: end;
+  }
+</style>
+
+<div class="justify-end-grid">
+  <div class="self-placing">A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+</div>
+
+
+
+<style>
+  .justify-center-grid {
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 100px 100px;
+  }
+
+  .justify-center-grid .self-placing {
+    justify-self: center;
+  }
+</style>
+
+<div class="justify-center-grid">
+  <div class="self-placing">A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+</div>
+
+
+
+<style>
+  .justify-stretch-grid {
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 100px 100px;
+  }
+
+  .justify-stretch-grid .self-placing {
+    justify-self: stretch;
+  }
+</style>
+
+<div class="justify-stretch-grid">
+  <div class="self-placing">A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+</div>
+
+
+
+<style>
+  .place-items-end-center-combo-grid {
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 100px 100px;
+    place-items: end center;
+  }
+</style>
+
+<div class="place-items-end-center-combo-grid">
+  <div>A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+</div>
+
+
+
+<style>
+  .place-items-center-center-combo-grid {
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 100px 100px;
+  }
+
+  .place-items-center-center-combo-grid .self-placing {
+    place-self: center;
+  }
+</style>
+
+<div class="place-items-center-center-combo-grid">
+  <div class="self-placing">A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+</div>

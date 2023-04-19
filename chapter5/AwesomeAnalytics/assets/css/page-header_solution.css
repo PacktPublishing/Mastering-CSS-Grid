@@ -17,5 +17,5 @@
 }
 
 .page-title .material-icons-outlined {
-  margin-right: var(--spacing-m);
+  margin-inline-end: var(--spacing-m);
 }

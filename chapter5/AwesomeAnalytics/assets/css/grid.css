@@ -29,3 +29,24 @@
 .chart-box-tall {
   grid-row: span 2
 }
+
+
+
+
+
+.body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-header {
+  width: 100%;
+}
+
+.sidebar {
+  flex: 0 1 auto;
+}
+
+.main-page-content {
+  flex: 1;
+}

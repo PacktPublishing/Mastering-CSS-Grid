@@ -16,6 +16,12 @@
       .should-break {
         word-break: break-all;
       }
+
+.fit-content-grid {
+  display: grid;
+  width: 200px;
+  grid-template-columns: fit-content(50px) 1fr 1fr 1fr;
+}
     </style>
   </head>
   <body>
@@ -53,6 +59,19 @@
       <div>Some other column</div>
       <div>Some other column</div>
     </div>
+
+    <hr>
+
+    <p>
+      This grid uses fit-content to show how the image stays the same size:
+    </p>
+
+<div class="fit-content-grid">
+  <img src="assets/80.png" alt="80x80">
+  <div>A</div>
+  <div>B</div>
+  <div>C</div>
+</div>
 
   </body>
 </html>

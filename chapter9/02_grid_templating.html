@@ -1,0 +1,121 @@
+<style>
+  .template-columns-based {
+    display: grid;
+    grid-template-columns: 100px 150px 50% 1fr;
+  }
+</style>
+
+<div class="template-columns-based">
+  <div>A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+</div>
+
+
+
+<style>
+  .named-grid-columns {
+    display: grid;
+    grid-template-columns: [col-1-start] 100px [col-1-end col-2-start] 100px [col-2-end];
+  }
+</style>
+
+<div class="named-grid-columns">
+  <div>A</div>
+  <div>B</div>
+</div>
+
+
+
+<style>
+  .template-rows-based {
+    display: grid;
+    grid-template-rows: 100px 150px 50% 1fr;
+  }
+</style>
+
+<div class="template-rows-based">
+  <div>A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+</div>
+
+
+
+<style>
+  .named-grid-rows {
+    display: grid;
+    grid-template-rows: [row-1-start] 100px [row-1-end row-2-start] 100px [row-2-end];
+  }
+</style>
+
+<div class="named-grid-rows">
+  <div>A</div>
+  <div>B</div>
+</div>
+
+
+
+<style>
+  .template-areas {
+    display: grid;
+    grid-template:
+      [header-row-start] "header header header" 100px [header-row-end]
+      [content-row-start] "sidebar . content" 1fr [content-row-end]
+    / 100px 100px 1fr;
+  }
+
+  .named-rows-and-columns {
+    grid-template-columns: 100px 100px 1fr;
+    grid-template-rows: [header-row-start] 100px [header-row-end content-row-start] 1fr [content-row-end];
+    grid-template-areas: "header header header" "sidebar . content";
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+  }
+
+  .content {
+    grid-area: content;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+</style>
+
+<div class="template-areas">
+  <header class="header">
+    Header
+  </header>
+  <aside class="sidebar">
+    Sidebar
+  </aside>
+  <main class="content">
+    Content
+  </main>
+  <footer class="footer">
+    Footer
+  </footer>
+</div>
+
+<div class="named-rows-and-columns">
+  <header class="header">
+    Header
+  </header>
+  <aside class="sidebar">
+    Sidebar
+  </aside>
+  <main class="content">
+    Content
+  </main>
+  <footer class="footer">
+    Footer
+  </footer>
+</div>

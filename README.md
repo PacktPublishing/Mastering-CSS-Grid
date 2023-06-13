@@ -3,7 +3,7 @@ Mastering CSS Grid, published by Packt
 
 <a href="https://www.packtpub.com/product/mastering-css-grid/9781804614846"><img src="https://static.packt-cdn.com/products/9781804614846/cover/smaller" alt="Mastering CSS Grid" height="256px" align="right"></a>
 
-This is the code repository for [Mastering CSS Grid](https://www.packtpub.com/product//mastering-css-grid/9781804614846), published by Packt.
+This is the code repository for [Mastering CSS Grid](https://www.packtpub.com/product/mastering-css-grid/9781804614846), published by Packt.
 
 **A comprehensive and practical guide to creating beautiful layouts with CSS Grid**
 

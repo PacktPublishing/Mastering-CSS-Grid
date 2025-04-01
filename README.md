@@ -51,7 +51,9 @@ The code will look like the following:
 CSS Grid has revolutionized web design by filling a long-existing gap in creating real, dynamic grids on the web. This book will help you grasp these CSS Grid concepts in a step-by-step way, empowering you with the knowledge and skills needed to design beautiful and responsive grid-based layouts for your web projects.
 
 With the following software and hardware list you can run all code files present in the book (Chapter 1-9).
+
 ### Software and Hardware List
+
 | Software required                    | OS required                         |
 | ------------------------------------ | ----------------------------------- |
 | CSS Grid                             | Windows, macOS, or Linux            |
@@ -62,6 +64,9 @@ With the following software and hardware list you can run all code files present
 
 We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https://packt.link/0FCcj).
 
+## Errata
+* Page 18 (Code block, line 6,7): **<< >>** _should be_ **" "**
+* Page 20 ( Code block, line 6,7,8,9): **<< >>** _should be_ **" "**
 
 ### Related products <Other books you may enjoy>
 * Responsive Web Design with HTML5 and CSS  [[Packt]](https://www.packtpub.com/product/responsive-web-design-with-html5-and-css-third-edition/9781839211560) [[Amazon]](https://www.amazon.in/Responsive-Web-Design-HTML5-CSS/dp/1839211563/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=)
